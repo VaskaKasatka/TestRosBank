@@ -1,0 +1,45 @@
+
+    .table{
+        font-family: "Georgia", "Roboto", "Lucida Grande", "DejaVu Sans", "Bitstream Vera Sans", Verdana, Arial, sans-serif;
+        font-size: 20px;
+        margin: 0 auto;
+        text-align: center;
+        margin-top: 3em;
+        font-style:italic;
+    }
+    body{
+        background-color: #b9bbbe;
+    }
+
+    .success{
+        font-family: "Lucida Sans Unicode", "Lucida Grande", Sans-Serif;
+        text-align: center;
+        border-collapse: collapse;
+        border-spacing: 5px;
+        background: #E1E3E0;
+        border-radius: 20px;
+        margin: 50px 10px 10px 10px;
+    }
+    .submit{
+        border-spacing: 5px;
+        border-radius: 5px;
+        border-color: #ccc;
+        margin: 10px;
+    }
+    .submit:hover{
+        background-color: #ccc;
+    }
+    th{
+        font-size: 18px;
+        font-weight: 300;
+        padding: 12px 10px;
+        border-bottom: 2px solid #117a8b;
+        color: #004085;
+}
+/*tbody tr:nth-child(2){*/
+/*        border-bottom: 2px solid #117a8b;*/
+/*}*/
+td{
+        padding: 20px;
+        color: #8D8173;
+}

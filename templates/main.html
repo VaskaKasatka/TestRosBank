@@ -1,0 +1,67 @@
+{% load staticfiles %}
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Тест</title>
+    <link rel="stylesheet" type="text/css" href="{% static 'css/bootstrap.min.css' %}">
+    <link rel="stylesheet" type="text/css" href="{% static 'css/style.css' %}">
+</head>
+<body>
+
+    <div class="container">
+        <div class="table">
+            <h2>Выполнение тестового задания для Росбанка*</h2>
+        <hr/>
+            <h3>Ниже представлен sql запрос по отделениям банка</h3>
+        </div>
+            <div class="row">
+                <div class="col-lg-12">
+                    <div class = 'info_table'>
+                        <table class = 'success'>
+                        <tr>
+                            <th>Месяц</th>
+                            <th>ТО</th>
+                            <th>Город</th>
+                            <th>Офис</th>
+                            <th>Группа показателей</th>
+                            <th>Показатель</th>
+                            <th>Значение</th>
+                        </tr>
+                            <tr>
+                                <td>{{ object.month }}</td>
+                                <td>{{ object.to }}</td>
+                                <td>{{ object.city }}</td>
+                                <td>{{ object.office }}</td>
+                                <td>{{ object.financial_group }}</td>
+                                <td>{{ object.financial }}</td>
+                                <td>{{ object.value }}</td>
+                            </tr>
+                        </table>
+                            <input class = 'submit' type="submit" value="Получить запрос">
+                    </div>
+            </div>
+        </div>
+        <hr/>
+        <div class="feedback">
+            <h3>Обратная связь:</h3>
+            <p>Email: DenisovVasVal@gmail.com</p><br/>
+            <br/>
+            <p>*<strong>Примечание:</strong> Тестовое задание было выполнено не полностью:<br/> -Возникли проблемы с подключение MS SQL к приложению Django. К сожалению, не успел разобраться с причиной. <br/> База данных была добавлена из админки сервера проекта.</p>
+
+        </div>
+    </div>
+</body>
+</html>
+{#                       {% for object in Table %}#}
+{#                        <div class="success">#}
+{#                            {{ object.id }}#}
+{#                            {{ object.month }}#}
+{#                            {{ object.city }}#}
+{#                            {{ object.office }}#}
+{#                            {{ object.financial_group }}#}
+{#                            {{ object.financial }}#}
+{#                            {{ object.value }}#}
+{#                         {% endfor %}#}
+{#                        </div>#}
